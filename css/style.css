@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+header, nav, section, main, article, aside, footer, time {
+    display: block;
+}
+body {
+    position:relative;
+    height: 100%;
+    width: 100%;
+    font-family:"HelveticaNeue UltraLight";
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: regular;
+    color: white;
+    background: url("../img/bg.png");
+    background-repeat: repeat;
+}
+@font-face {
+    font-family: "HelveticaNeue UltraLight";
+    src: url("../fonts/helvetica-neue-ultra-light.ttf") format("truetype");
+}
+a{
+	color: white;
+	display: block;
+}
+a:active{
+	background-color: black;
+	opacity: 0.2;
+}
+a:hover{
+	transform: translate(0, 5px);
+}
+.wrapper{
+	margin: 0 auto;
+	height: auto;
+	overflow: hidden;
+    min-width: 320px;											
+    max-width: 920px;
+}
+header{
+	font-size: 65px;
+	line-height: 26px;
+	margin: 95px 0;
+}
+main{
+	min-height: 320px;
+}
+.tile-wrap{
+	overflow: hidden;
+	position: relative;
+}
+.tile{
+	float: left;
+	position: relative;
+	margin-right: 1%;
+	margin-bottom: 1%;
+}
+.tile-5, .tile-8{
+	margin-right: 0;
+}
+.tile-1, .tile-2, .tile-4, .tile-5, .tile-8{
+	width: 16.3%;
+	padding-bottom: 16.3%;
+	background-repeat: no-repeat;
+	background-position: 50% 40%;
+	background-size: 40% auto;
+} 
+.tile-7 .innerTile{
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+.tile-3{
+	width: 30.4%;
+	padding-bottom: 16.3%;
+	background-color: #d3573e;
+	background-image: url("../img/bag.png");
+	background-repeat: no-repeat;
+	background-position: 50% 40%;
+	background-size: 20% auto;
+}
+.tile-6{
+	width: 33.7%;
+	padding-bottom: 16.3%;
+	background-color: #86a73f;
+	background-image: url("../img/chair.png");
+	background-repeat: no-repeat;
+	background-position: 50% 40%;
+	background-size: 20% auto;
+}
+.tile-7{
+	width: 47.7%;
+	padding-bottom: 16.3%;
+	background-color: #151a26;
+	line-height: 30px;
+}
+.tile-7 img{
+	width: 34%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.blog-part{
+	width: 60%;
+	position: absolute;
+	right: 0;
+}
+.tile-7 .tile-title{
+	position: absolute;
+	left: 0;
+    top: 0;
+}
+.tile-7 p{
+	font-size: 22px;
+	padding-top: 30px;
+	padding-bottom: 8px;
+}
+time{
+	font-size: 12px;
+}
+.innerTile{
+	position: absolute;
+   left: 8px;
+   right: 8px;
+   top: 0;
+   bottom: 0;
+}
+.tile-1{
+	background-color: #3387ea;
+	background-image: url("../img/home.png");
+	}
+.tile-2{
+	background-color: #f9be3e;
+	background-image: url("../img/man.png");
+}
+.tile-4{
+	background-color: #59b0e2;
+	background-image: url("../img/photos.png");
+}
+.tile-5{
+	background-color: #33af95;
+	background-image: url("../img/testimonials.png");
+}
+.tile-8{
+	background-color: #7e5b8c;
+	background-image: url("../img/envelope.png");
+}
+.tile-title{
+	position: absolute;
+	left: 0;
+    bottom: 0;
+   }
+
+.social-icons-container{
+	font-size: 0;
+}
+.social-icons{
+	float: left;
+	list-style: none;
+}
+.social-icons a{
+	line-height: 1;
+}
+.social-icons li{
+	display: inline-block;
+	width: 75px;
+    height: 75px;
+	margin-right: 10px;
+}
+.copyright{
+	float: right;
+	font-size: 14px;
+	padding-top: 40px;
+}
+footer{
+	min-height: 100px;
+}
+@media only screen and (min-width: 320px) and (max-width : 650px){
+body{
+	font-size: 14px;
+}
+.tile-1, .tile-2, .tile-4, .tile-5, .tile-8{
+	width: 25%;
+	padding-bottom: 25%;
+} 
+.tile-3, .tile-6{
+	width: 48%;
+	padding-bottom: 25%;
+}
+.tile-7{
+	width: 74%;
+	padding-bottom: 25%;
+}
+.innerTile{
+	left: 3px;
+   right: 3px;
+   top: 5px;
+   bottom: 0;
+}
+.tile-5{
+	margin-right: 1%;
+}
+.tile-3, .tile-6{
+	margin-right: 0;
+}
+
+.tile-7{
+	line-height: 1;
+	}
+.tile-7 p{
+	font-size: 14px;
+	padding-top: 18px;
+	padding-bottom: 2px;
+}
+time{
+	font-size: 12px;
+}
+.wrapper{
+	margin: 0 1%;
+}
+.copyright{
+	float: left;
+}
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+.tile-6{
+	width: 33.6%;
+}
+.tile-7{
+	width: 47.8%;
+}
+.wrapper{
+	margin: 0 1%;
+}
+.tile-7 p{
+	line-height: 20px;
+	font-size: 14px;
+	padding-top: 26px;
+	padding-bottom: 2px;
+}
+time{
+	font-size: 12px;
+}
+}
